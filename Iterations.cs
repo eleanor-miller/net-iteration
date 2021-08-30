@@ -121,11 +121,9 @@ namespace DotnetIteration
         // 
         public static bool EveryoneIsOdd(List<int> numbers)
         {
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
 
-            // var everyoneIsOdd = numbers.All(number => number % 2 !=0);
-
-            // return true;
+            return numbers.All(number => number % 2 != 0);
         }
 
 
