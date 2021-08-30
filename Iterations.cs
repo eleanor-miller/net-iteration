@@ -44,10 +44,13 @@ namespace DotnetIteration
         // 2) Complete the method named `Double` that takes a list of
         //    numbers as an argument and returns a new list with all
         //    the numbers multiplied by 2.
-        // 
+        //  
         public static IEnumerable<int> Double(List<int> numbers)
         {
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
+            var numbersMultipliedBy2 = numbers.Select(number => number * 2);
+
+            return numbersMultipliedBy2;
         }
 
 
