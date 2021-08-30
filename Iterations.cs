@@ -160,7 +160,9 @@ namespace DotnetIteration
         // 
         public static bool SomeoneToLove(List<string> words)
         {
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
+
+            return words.Any(word => word.Length == 4);
         }
     }
 }
