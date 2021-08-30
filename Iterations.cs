@@ -91,10 +91,8 @@ namespace DotnetIteration
         {
             //throw new System.NotImplementedException();
 
-            var number = numbers.Where((numbers, index) => index % 2 == 0);
+            return numbers.Where((numbers, index) => index % 2 == 0);
             
-            return number;
-        
         }
 
 
@@ -102,7 +100,7 @@ namespace DotnetIteration
         // 6) Complete the method BestMoviesOfTheYear that accepts a list of
         //    movie objects AND a year and returns the names of movies that are
         //    from that year AND have a score more than 90.
-        // 
+        //  return list of movie objects that are from a YEAR and scored more than 90
         // A movie object looks like this:
         // 
         // new Movie() {
@@ -113,7 +111,7 @@ namespace DotnetIteration
         // 
         public static IEnumerable<string> BestMovieOfTheYear(List<Movie> movies, int yearToMatch)
         {
-            throw new System.NotImplementedException();
+            return movies.Where(movie => ((movie.Year == yearToMatch) && (movie.Score > 90))).Select(movie => movie.Name);
         }
 
 
@@ -124,6 +122,10 @@ namespace DotnetIteration
         public static bool EveryoneIsOdd(List<int> numbers)
         {
             throw new System.NotImplementedException();
+
+            // var everyoneIsOdd = numbers.All(number => number % 2 !=0);
+
+            // return true;
         }
 
 
