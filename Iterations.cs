@@ -37,6 +37,8 @@ namespace DotnetIteration
             var newWords = words.Select(word => word.ToUpper());
 
             return newWords;
+
+            // Also acceptable is: return words.Select(word => word.ToUpper());
         }
 
 
@@ -44,7 +46,7 @@ namespace DotnetIteration
         // 2) Complete the method named `Double` that takes a list of
         //    numbers as an argument and returns a new list with all
         //    the numbers multiplied by 2.
-        //  
+        //  double numbersMultipliedBy2 = numbers.Select(number => number * 2);
         public static IEnumerable<int> Double(List<int> numbers)
         {
             //throw new System.NotImplementedException();
@@ -59,10 +61,12 @@ namespace DotnetIteration
         //    strings as an argument and returns a new list with each
         //    string suffixed with " is at index X" where X is the index
         //    of the element.
-        // 
+        //  var = words.Select(word => $" {word} is at index {index});
         public static IEnumerable<string> StringyIndexes(List<string> words)
         {
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
+            
+            return words.Select((word, index) => ($"{word} is at index {index}"));
         }
 
 
@@ -73,6 +77,7 @@ namespace DotnetIteration
         public static IEnumerable<int> OnlyTheEvenSurvive(List<int> numbers)
         {
             throw new System.NotImplementedException();
+            
         }
 
 
