@@ -77,6 +77,7 @@ namespace DotnetIteration
         public static IEnumerable<int> OnlyTheEvenSurvive(List<int> numbers)
         {
             //throw new System.NotImplementedException();
+
             return numbers.Where(number => number % 2 == 0);
         }
 
@@ -88,7 +89,12 @@ namespace DotnetIteration
         // 
         public static IEnumerable<int> OnlyTheEvenIndexedSurvive(List<int> numbers)
         {
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
+
+            var number = numbers.Where((numbers, index) => index % 2 == 0);
+            
+            return number;
+        
         }
 
 
@@ -129,6 +135,7 @@ namespace DotnetIteration
         public static string FindTheNeedle(List<string> sentences)
         {
             throw new System.NotImplementedException();
+
         }
 
 
